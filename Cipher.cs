@@ -18,10 +18,15 @@ public class Cipher
     /// <param name="message">The message to decrypt</param>
     /// <returns>The decrypted message</returns>
     public string Decrypt(string message)
+    
     {
-        // TODO: Finish the Decrypt method
-        newMessage += (char)(c - shift);
-        return null;
+        string newMessage = string.Empty;
+        foreach (char c in message)
+            {
+            // TODO: Finish the Decrypt method
+            newMessage += (char)(c - shift);
+        }
+        return newMessage;
     }
 
     /// <summary>
