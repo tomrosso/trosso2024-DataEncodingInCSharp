@@ -6,15 +6,22 @@ namespace trosso2024_DataEncodingInCSharp
     {
         static void Main(string[] args)
         {
+           int shift;
+           shift = 1;
+           while(shift <= 10){
+              Cipher cipher1;
+            cipher1 = new Cipher(1);
+            Console.WriteLine ((char)(shift + 1));
+           }
+
+
            string filePath = args[0];
-           Console.WriteLine($"Loading '{filePath}'.") 
+           Console.WriteLine($"Loading '{filePath}'.");
            
            string message;
            message = System.IO.File.ReadAllText(filePath);
            Console.WriteLine($"The encrypted message is: {message}");
-           string message;
-            message = System.IO.File.ReadAllText("secrets/1.txt");
-            Console.WriteLine($"The encrypted message is: '{message}'");
+
             Cipher cipher;
             cipher = new Cipher(3);
 
